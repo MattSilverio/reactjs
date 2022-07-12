@@ -15,8 +15,33 @@ export function Post() {
           </div>
         </div>
 
-        <time dateTime="">Publicado há 1h</time>
+        <time title="30 de Junho de 2022" dateTime="2022-06-30 01:57">
+          Publicado há 1h
+        </time>
       </header>
+
+      <div className={styles.content}>
+        <p>
+          Fala Galera!!
+        </p>
+
+        <p>Acabei de subir um projeto no meu sorteio. É um projeto que fiz no NLW Return, evento da Rocketseat</p>
+        <p><a href="">jane.design/doctorcare</a></p>
+
+        <p>
+          <a href="">#novoprojeto</a>{' '}
+          <a href="">#nlw</a>{' '}
+          <a href="">#rocketseat</a>
+        </p>
+      </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixe seu feedback</strong>
+
+        <textarea placeholder="Deixe um comentário"/>
+
+        <button type="submit">Comentar</button>
+      </form>
     </article>
   );
 }
